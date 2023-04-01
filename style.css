@@ -100,7 +100,7 @@ transform: scale(1.05);
 }
 
 .block_2 {
-    height: 90vh;
+    height: 100%;
     padding: 0 50px ;
     
     margin-bottom: 100px;
@@ -119,11 +119,11 @@ flex-direction: column;
 gap: 20px;
 }
 .card_text {
-flex: 1;
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: 'Saira Stencil One';
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Saira Stencil One';
     font-style: normal;
     font-weight: 400;
     font-size: 128px;
@@ -131,11 +131,11 @@ font-family: 'Saira Stencil One';
     color: #04262F;
 }
 .card {
-    flex: 3;
     background-color: #ffffff;
     border: 30px solid #04262F;
     border-radius: 10px;
     transition: all .2s;
+    height: 600px;
 }
 .card:hover {
     transform: scale(1.05);
@@ -198,6 +198,121 @@ font-family: 'Saira Stencil One';
     }
     .card_text {
         font-size: 65px;
+    }
+    .footer_text h1{
+        font-size: 24px;
+
+    }
+    .footer_text p{ 
+        font-size: 18px;
+
+    }
+    .footer_adress {
+        font-size: 24px;
+    }
+    .block_1_button button {
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+}
+@media (max-width:1109px) and (min-width:768px) {
+    .header_title {
+        font-size: 24px;
+        
+    }
+    .header_nav a{
+        font-size: 12px;
+    }
+    .block_1 {
+        flex-direction: column;
+    }
+    .block_1_text h1 {
+        font-size: 64px;
+    }
+    .block_1_text p{
+        font-size: 28px;
+    }
+    .block_1 {
+        gap: 100px;
+    }
+    .block_2 {
+        height: 100%;
+    }
+    .gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cards {
+        gap: 0;
+        
+    }
+    .card {
+        height: 500px;
+    }
+    .card_text {
+        font-size: 64px;
+        line-height: normal;
+    }
+    .footer_text h1{
+        font-size: 24px;
+
+    }
+    .footer_text p{ 
+        font-size: 18px;
+
+    }
+    .footer_adress {
+        font-size: 24px;
+    }
+    .block_1_button button {
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+}
+@media (max-width:767px) and (min-width:425px) {
+    .header_title {
+        font-size: 18px;
+        
+    }
+    .header_nav a{
+        display: none;
+    }
+    .block_1 {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .block_1_text h1 {
+        font-size:78px;
+        line-height: normal;
+    }
+    .block_1_text p{
+        font-size:32px;
+        line-height: normal;
+    }
+    .block_1 {
+        gap: 100px;
+    }
+    .block_2 {
+        height: 100%;
+    }
+    .gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cards {
+        gap: 0;
+        
+    }
+    .card {
+        height: 400px;
+    }
+    .card_text {
+        font-size: 48px;
+        line-height: normal;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 50px;
     }
     .footer_text h1{
         font-size: 24px;
