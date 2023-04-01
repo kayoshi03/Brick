@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Comfortaa", cursive;
+}
+body, html {
+    height: 100%;
+} 
+.container {
+    /* height: 100%; */
+    background-image: url(/brick19.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    width: -webkit-fill-available;
+    height: 100px;
+    background-color: #EEAA83;;
+    color: #04262F;
+    position: fixed;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.logotype {
+    background-image: url(./к43434\ 2.png);
+    width: 100px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.header_title {
+    font-family: 'Saira Stencil One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 101px;
+    color: #04262F;
+}
+.header_nav {
+    display: flex;
+    gap: 50px;
+    
+}
+.header_nav a {
+    color: #04262F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+}
+
+
+.block_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 250px;
+    padding: 0 100px;
+}
+.block_1_text h1{
+    font-family: 'Saira Stencil One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 201px;
+    color: #04262F;
+}
+.block_1_text p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 71px;
+
+    color: #04262F;
+}
+.block_1_button button{
+        font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding: 30px 60px;
+    background: #04262F;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    transition: all.2s;
+}
+.block_1_button button:hover{
+background-color: #FFFFFF;
+color: #04262F;
+transform: scale(1.05);
+}
+
+.block_2 {
+    height: 90vh;
+    padding: 0 50px ;
+    
+    margin-bottom: 100px;
+}
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2%;
+}
+.cards {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.card_text {
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Saira Stencil One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 201px;
+    color: #04262F;
+}
+.card {
+    flex: 3;
+    background-color: #ffffff;
+    border: 30px solid #04262F;
+    border-radius: 10px;
+    transition: all .2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(238, 170, 131, 0.8);
+}
+.footer_text {
+    color: #04262F;
+}
+.footer_text h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
+}
+.footer_text p{
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+}
+.footer_text_info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer_adress {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #04262F;
+}
+
+
+@media (max-width:1440px) and (min-width:1110px) {
+    .header_title {
+        font-size: 48px;
+    }
+    .header_nav a{
+        font-size: 20px;
+    }
+    .block_1_text h1 {
+        font-size: 65px;
+    }
+    .block_1_text p{
+        font-size: 36px;
+    }
+    .block_1 {
+        gap: 100px;
+    }
+    .card_text {
+        font-size: 65px;
+    }
+    .footer_text h1{
+        font-size: 24px;
+
+    }
+    .footer_text p{ 
+        font-size: 18px;
+
+    }
+    .footer_adress {
+        font-size: 24px;
+    }
+    .block_1_button button {
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+}
